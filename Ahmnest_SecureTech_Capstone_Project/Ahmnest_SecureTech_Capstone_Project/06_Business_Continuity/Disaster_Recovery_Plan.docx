@@ -1,0 +1,89 @@
+DISASTER RECOVERY PLAN
+================================================================================
+Company: Ahmnest SecureTech Solution
+Effective Date: [Date]
+Version: 1.0
+================================================================================
+
+1. PURPOSE
+================================================================================
+This Disaster Recovery Plan outlines the procedures for restoring critical
+IT systems and data following a disaster or significant disruption.
+
+2. CRITICAL SYSTEMS
+================================================================================
+| System | Priority | RTO | RPO | Owner |
+|--------|----------|-----|-----|-------|
+| Email/Office 365 | 1 | 1 hour | 5 min | IT |
+| Customer Database | 1 | 2 hours | 15 min | CTO |
+| Website/Apps | 2 | 4 hours | 1 hour | IT |
+| File Servers | 2 | 4 hours | 1 hour | IT |
+| Financial Systems | 3 | 8 hours | 2 hours | CFO |
+| HR Systems | 4 | 24 hours | 4 hours | HR |
+
+3. DISASTER SCENARIOS
+================================================================================
+| Scenario | Impact | Recovery Strategy | Owner |
+|----------|--------|-------------------|-------|
+| Cyber Attack (Ransomware) | Data loss, system compromise | Restore from backups | IT/CTO |
+| Natural Disaster (Fire/Flood) | Site inaccessible | Cloud failover | IT/CEO |
+| Power Outage | System downtime | UPS + Generator | Facilities |
+| Hardware Failure | System unavailable | Spare hardware | IT |
+| Cloud Provider Outage | Service unavailable | Alternate provider | CTO |
+| Human Error | Data loss/corruption | Restore from backups | IT |
+
+4. RECOVERY STRATEGIES
+================================================================================
+| Strategy | Approach | Implementation |
+|----------|----------|----------------|
+| Hot Site | Fully operational alternate site | Cloud failover |
+| Warm Site | Partially prepared site | Backup servers on AWS |
+| Cold Site | Standby facility | Contract with provider |
+
+5. RECOVERY PROCEDURES
+================================================================================
+5.1 Cyber Incident (Ransomware):
+1. Activate incident response team
+2. Isolate affected systems
+3. Assess data corruption
+4. Restore from clean backups (pre-incident)
+5. Verify system integrity
+6. Resume operations
+
+5.2 Hardware Failure:
+1. Identify failed components
+2. Deploy backup hardware
+3. Restore from backup
+4. Verify functionality
+5. Resume operations
+
+6. TESTING SCHEDULE
+================================================================================
+| Test Type | Frequency | Participants | Success Criteria |
+|-----------|-----------|--------------|------------------|
+| Tabletop Exercise | Quarterly | Key stakeholders | Action plans updated |
+| Full DR Test | Annually | All teams | RTO/RPO met |
+| Partial Test | Semi-Annually | IT Team | Key systems recovered |
+
+7. ROLES AND RESPONSIBILITIES
+================================================================================
+| Role | Responsibility | Backup/Alternate |
+|------|----------------|------------------|
+| CTO | Overall DR coordination | IT Manager |
+| IT Lead | Technical recovery | Senior Admin |
+| Operations | Facilities/Logistics | Office Manager |
+| HR | Employee communication | HR Director |
+| Communications | Client/Stakeholder comms | CEO |
+
+8. CONTACTS
+================================================================================
+| Type | Contact | Details |
+|------|---------|---------|
+| CTO | [Name] | [Phone/Email] |
+| IT Lead | [Name] | [Phone/Email] |
+| Office Manager | [Name] | [Phone/Email] |
+| ISP Support | [Name] | [Phone/Email] |
+| Cloud Provider | [Name] | [Phone/Email] |
+| Insurance Provider | [Name] | [Phone/Email] |
+
+================================================================================

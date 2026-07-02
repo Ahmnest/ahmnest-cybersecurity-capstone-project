@@ -1,0 +1,9 @@
+Asset Name,Type,Owner,Value,Location,Sensitivity,Backup Status,Access Control
+Customer Database,Data,CTO,Critical,AWS Cloud,High,Automated,MFA Required
+Financial Records,Data,CFO,High,On-Premise,High,Manual,Role-Based
+Intellectual Property,Data,CEO,Critical,Internal Server,High,Manual,Restricted
+Employee Records,Data,HR,High,HR System,High,Automated,Role-Based
+Email System,Service,CTO,High,Office 365,Critical,Automated,MFA Required
+Web Applications,Service,CTO,High,Cloud,High,Automated,MFA Required
+Client Contracts,Data,Sales,High,SharePoint,High,Automated,Role-Based
+Network Infrastructure,Hardware,IT,Critical,Server Room,High,Manual,Physical

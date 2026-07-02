@@ -1,0 +1,63 @@
+SECURITY TRAINING AND AWARENESS PLAN
+================================================================================
+Company: Ahmnest SecureTech Solution
+Effective Date: [Date]
+Version: 1.0
+================================================================================
+
+1. OVERVIEW
+================================================================================
+This plan defines the security awareness training program for all employees
+and contractors to ensure they understand their role in maintaining security.
+
+2. TRAINING PROGRAM
+================================================================================
+| Training Type | Audience | Frequency | Duration |
+|---------------|----------|-----------|----------|
+| New Hire Security | All Employees | Upon Hire | 2 Hours |
+| Phishing Awareness | All Employees | Monthly | 30 Minutes |
+| Password Security | All Employees | Quarterly | 30 Minutes |
+| Incident Reporting | All Employees | Quarterly | 30 Minutes |
+| Data Protection | All Employees | Semi-Annually | 1 Hour |
+| Advanced Security | IT Staff | Monthly | 2 Hours |
+
+3. PHISHING SIMULATION PROGRAM
+================================================================================
+| Activity | Frequency | Success Criteria |
+|----------|-----------|------------------|
+| Simulated Phishing | Monthly | < 10% Click Rate |
+| Targeted Campaigns | Quarterly | < 5% Click Rate |
+| Executive Campaigns | Quarterly | < 2% Click Rate |
+| Remediation Training | As Needed | 100% Completion |
+
+4. TRAINING CONTENT
+================================================================================
+| Topic | Description | Delivery Method |
+|-------|-------------|-----------------|
+| Identifying Phishing | Spotting suspicious emails | E-learning + Simulation |
+| Secure Password Practices | Creating/managing passwords | E-learning |
+| Social Engineering | Recognizing manipulation | E-learning |
+| Data Protection | Handling sensitive data | E-learning + Workshop |
+| Incident Response | Reporting procedures | E-learning |
+| Mobile Security | Securing mobile devices | E-learning |
+| Home Office Security | Securing remote work | E-learning |
+
+5. COMPLIANCE TRACKING
+================================================================================
+| Metric | Target | Tracking Method |
+|--------|--------|-----------------|
+| Training Completion Rate | 100% | LMS Tracking |
+| Phishing Click Rate | < 10% | Simulation Report |
+| Incident Reports | Increasing | Incident Database |
+| Policy Acknowledgment | 100% | Electronic Signature |
+
+6. RESPONSIBLE PARTIES
+================================================================================
+| Role | Responsibility |
+|------|----------------|
+| HR Director | Manage enrollment |
+| IT Lead | Deliver technical training |
+| CTO | Sponsor program |
+| All Employees | Participate and learn |
+
+================================================================================

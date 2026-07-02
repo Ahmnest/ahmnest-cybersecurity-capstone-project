@@ -1,0 +1,50 @@
+BACKUP AND RECOVERY STRATEGY
+================================================================================
+Company: Ahmnest SecureTech Solution
+Effective Date: [Date]
+Version: 1.0
+================================================================================
+
+1. OBJECTIVES
+================================================================================
+- Ensure data availability and integrity
+- Minimize downtime in event of data loss
+- Meet Recovery Time Objective (RTO): 4 hours
+- Meet Recovery Point Objective (RPO): 15 minutes
+
+2. BACKUP SCHEDULE
+================================================================================
+| Data Type | Frequency | Retention | Method |
+|-----------|-----------|-----------|--------|
+| Databases | Every 4 Hours | 30 Days | Automated |
+| File Servers | Daily | 90 Days | Automated |
+| Email | Continuous | 365 Days | Cloud-native |
+| User Data | Daily | 30 Days | Automated |
+| System Configs | Daily | 60 Days | Automated |
+
+3. BACKUP LOCATIONS
+================================================================================
+| Location | Purpose | Retention |
+|----------|---------|-----------|
+| On-Premise NAS | Fast recovery | 7 Days |
+| Cloud (AWS) | Off-site retention | 90 Days |
+| Offline (Tape) | Long-term archive | 7 Years |
+
+4. RECOVERY PROCEDURES
+================================================================================
+| Scenario | RTO | Procedure |
+|----------|-----|-----------|
+| Single File Restore | 15 min | User self-service |
+| Database Corruption | 2 hours | IT restore from backup |
+| Server Failure | 4 hours | Bare metal restore |
+| Site Disaster | 8 hours | Cloud failover |
+
+5. TESTING
+================================================================================
+| Test Type | Frequency | Success Criteria |
+|-----------|-----------|------------------|
+| File Restore | Monthly | Successful restore |
+| Database Restore | Quarterly | Successful restore |
+| Full DR Test | Annually | RTO/RPO met |
+
+================================================================================

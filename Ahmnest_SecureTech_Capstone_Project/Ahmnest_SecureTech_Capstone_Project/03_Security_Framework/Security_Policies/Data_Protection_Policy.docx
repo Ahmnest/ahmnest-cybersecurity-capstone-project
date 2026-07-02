@@ -1,0 +1,62 @@
+DATA PROTECTION POLICY
+================================================================================
+Company: Ahmnest SecureTech Solution
+Effective Date: [Date]
+Version: 1.0
+================================================================================
+
+1. PURPOSE
+================================================================================
+This policy establishes requirements for protecting sensitive data including
+customer PII, financial records, and intellectual property in compliance with
+Nigerian Data Protection Regulation (NDPR).
+
+2. DATA CLASSIFICATION
+================================================================================
+| Classification | Definition | Examples |
+|----------------|------------|----------|
+| Public | Freely shareable | Marketing materials, contact info |
+| Internal | Company-wide access | Policies, procedures, org charts |
+| Confidential | Restricted access | Financial records, HR data |
+| Highly Confidential | Severely restricted | Customer PII, trade secrets, IP |
+
+3. DATA PROTECTION CONTROLS
+================================================================================
+| Control | Public | Internal | Confidential | Highly Confidential |
+|---------|--------|----------|--------------|---------------------|
+| Encryption (at rest) | Not Required | Recommended | Required | Required |
+| Encryption (in transit) | Recommended | Required | Required | Required |
+| Access Control | Open | Role-Based | Need-to-Know | Strictly Need-to-Know |
+| MFA | Not Required | Recommended | Required | Required |
+| Audit Logging | Not Required | Recommended | Required | Required |
+| Data Retention | 1 Year | 3 Years | 5 Years | 7 Years |
+
+4. DATA LIFECYCLE MANAGEMENT
+================================================================================
+| Stage | Requirements | Owner |
+|-------|---------------|-------|
+| Creation | Classification, encryption | Data Creator |
+| Storage | Access controls, backups | IT/Data Owner |
+| Usage | Need-to-know, logging | Authorized Users |
+| Sharing | Secure channels, approval | Data Owner |
+| Archiving | Encryption, access control | IT/Compliance |
+| Destruction | Secure deletion, certification | IT/Compliance |
+
+5. BREACH NOTIFICATION (NDPR Compliance)
+================================================================================
+| Type | Timeframe | Method |
+|------|-----------|--------|
+| Internal | 1 Hour | Emergency Notification |
+| Management | 4 Hours | Incident Report |
+| Legal Counsel | 8 Hours | Formal Notification |
+| NITDA | 72 Hours | Official Filing |
+| Affected Clients | 48 Hours | Formal Letter |
+
+6. DATA SHARING GUIDELINES
+================================================================================
+- Internal sharing: Only on need-to-know basis
+- External sharing: Requires approval and secure channel
+- Cloud services: Approved services only
+- Mobile devices: Company-approved devices only
+
+================================================================================

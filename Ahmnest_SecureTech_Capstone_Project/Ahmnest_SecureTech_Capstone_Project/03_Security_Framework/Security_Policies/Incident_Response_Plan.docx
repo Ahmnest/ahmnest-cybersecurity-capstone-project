@@ -1,0 +1,121 @@
+INCIDENT RESPONSE PLAN
+================================================================================
+Company: Ahmnest SecureTech Solution
+Effective Date: [Date]
+Version: 1.0
+================================================================================
+
+1. PURPOSE
+================================================================================
+This Incident Response Plan provides a structured approach for detecting,
+containing, eradicating, and recovering from cybersecurity incidents.
+
+2. INCIDENT RESPONSE TEAM
+================================================================================
+| Role | Responsibility | Contact |
+|------|----------------|---------|
+| Incident Commander | Overall coordination | [Name/Title] |
+| Security Lead | Technical analysis | [Name/Title] |
+| IT Lead | System restoration | [Name/Title] |
+| Communications Lead | Internal/External comms | [Name/Title] |
+| Legal Lead | Compliance/Legal review | [Name/Title] |
+| HR Lead | Employee matters | [Name/Title] |
+
+3. INCIDENT CLASSIFICATION
+================================================================================
+| Severity | Description | Examples |
+|----------|-------------|----------|
+| P1 - Critical | Severe business impact | Data breach, ransomware, major outage |
+| P2 - High | Significant impact | Phishing success, system compromise |
+| P3 - Medium | Limited impact | Malware on single system, unauthorized access |
+| P4 - Low | Minimal impact | Suspicious activity, policy violation |
+
+4. RESPONSE PHASES
+================================================================================
+PHASE 1: DETECTION (P1/P2 Incidents)
+- Identify potential incident
+- Verify through log analysis
+- Document initial findings
+- Assign classification
+- Activate response team
+
+PHASE 2: CONTAINMENT
+- Isolate affected systems
+- Block malicious traffic
+- Change passwords/access
+- Preserve evidence
+- Document all actions
+
+PHASE 3: ERADICATION
+- Remove malware/backdoors
+- Apply security patches
+- Rebuild affected systems
+- Verify system integrity
+- Update security controls
+
+PHASE 4: RECOVERY
+- Restore from backups
+- Test system functionality
+- Monitor for recurrence
+- Return to normal operations
+- Update incident status
+
+PHASE 5: POST-INCIDENT
+- Conduct lessons learned
+- Update response plan
+- Implement improvements
+- Document final report
+- Notify stakeholders
+
+5. COMMUNICATION PLAN
+================================================================================
+| Stakeholder | Communication Channel | Timing |
+|-------------|----------------------|--------|
+| Internal Team | Microsoft Teams | Immediate |
+| Management | Phone/Email | Within 1 hour |
+| Legal Counsel | Phone/Email | Within 2 hours |
+| Insurance Provider | Phone | Within 4 hours |
+| NITDA (Regulator) | Formal Letter | Within 72 hours |
+| Clients (if affected) | Formal Letter | Within 48 hours |
+
+6. TECHNICAL RESPONSE PROCEDURES
+================================================================================
+RANSOMWARE RESPONSE:
+1. Isolate infected systems (disconnect network)
+2. Contain spread (block network traffic)
+3. Assess encryption (identify impact)
+4. Contact IR team immediately
+5. Do NOT pay ransom
+6. Restore from clean backups
+
+PHISHING RESPONSE:
+1. Block sender/domain
+2. Reset affected user passwords
+3. Remove malicious emails
+4. Analyze for compromise
+5. Conduct user training
+
+DATA BREACH RESPONSE:
+1. Contain access (revoke credentials)
+2. Preserve evidence (logs, backups)
+3. Determine scope and impact
+4. Notify affected parties
+5. Engage legal counsel
+6. Report to NITDA
+
+7. TESTING AND EXERCISES
+================================================================================
+| Frequency | Exercise Type | Participants |
+|-----------|---------------|--------------|
+| Quarterly | Tabletop Exercise | All team members |
+| Annually | Full Simulation | All team members |
+| Biannual | Phishing Simulation | All employees |
+
+8. PLAN MAINTENANCE
+================================================================================
+- Review plan annually
+- Update contact information
+- Update based on lessons learned
+- Maintain incident documentation
+
+================================================================================

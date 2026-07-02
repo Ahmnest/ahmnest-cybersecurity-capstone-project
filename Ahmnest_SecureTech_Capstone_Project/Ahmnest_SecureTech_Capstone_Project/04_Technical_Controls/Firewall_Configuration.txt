@@ -1,0 +1,56 @@
+FIREWALL CONFIGURATION - Ahmnest SecureTech Solution
+================================================================================
+Device: pfSense/Cisco ASA
+Network: 192.168.1.0/24
+Effective Date: [Date]
+================================================================================
+
+1. FIREWALL RULES
+================================================================================
+| Source | Destination | Port | Action | Protocol | Purpose |
+|--------|-------------|------|--------|----------|---------|
+| Any | 192.168.1.10 | 80,443 | ALLOW | TCP | Web Server |
+| Any | 192.168.1.10 | 22 | ALLOW | TCP | SSH (restricted IPs) |
+| Any | 192.168.1.20 | 25,587 | ALLOW | TCP | Mail Server |
+| 192.168.1.0/24 | Any | 53 | ALLOW | UDP | DNS |
+| 192.168.1.0/24 | Any | 123 | ALLOW | UDP | NTP |
+| Any | Any | ALL | DENY | ALL | Default Deny |
+
+2. ZONE CONFIGURATION
+================================================================================
+| Zone | Network | Purpose |
+|------|---------|---------|
+| External | 0.0.0.0/0 | Internet (Untrusted) |
+| DMZ | 192.168.1.0/26 | Public Services |
+| Internal | 192.168.1.64/26 | Internal Network |
+| Management | 192.168.1.128/26 | Management (Restricted) |
+| Guest | 192.168.1.192/26 | Guest WiFi (Isolated) |
+
+3. INTRUSION PREVENTION (IPS) RULES
+================================================================================
+| Rule Group | Action | Priority |
+|------------|--------|----------|
+| Malware | BLOCK | Critical |
+| Exploits | BLOCK | Critical |
+| SQL Injection | BLOCK | High |
+| Cross-Site Scripting | BLOCK | High |
+| DoS Attacks | THRESHOLD | Medium |
+| Scanning | ALERT | Low |
+
+4. VPN CONFIGURATION
+================================================================================
+Protocol: OpenVPN/IKEv2
+Port: 1194 (UDP)
+Authentication: MFA Required
+Encryption: AES-256-GCM
+Client IP: 192.168.200.0/24
+
+5. RATE LIMITING
+================================================================================
+| Protocol | Limit | Action |
+|----------|-------|--------|
+| SSH | 3 attempts/minute | BLOCK for 5 min |
+| HTTPS | 100 requests/second | THROTTLE |
+| ICMP | 10 packets/second | DROP |
+
+================================================================================

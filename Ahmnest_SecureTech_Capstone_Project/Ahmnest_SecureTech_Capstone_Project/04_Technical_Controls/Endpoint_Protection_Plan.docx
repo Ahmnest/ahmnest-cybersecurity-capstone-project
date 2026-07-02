@@ -1,0 +1,53 @@
+ENDPOINT PROTECTION PLAN - Ahmnest SecureTech Solution
+================================================================================
+Effective Date: [Date]
+Version: 1.0
+================================================================================
+
+1. OVERVIEW
+================================================================================
+This document outlines the endpoint protection strategy for all company devices
+including workstations, servers, and mobile devices.
+
+2. PROTECTION TYPES
+================================================================================
+| Protection Type | Solution | Coverage |
+|-----------------|----------|----------|
+| Antivirus/Anti-Malware | CrowdStrike Falcon | All endpoints |
+| Endpoint Detection (EDR) | CrowdStrike Falcon | All endpoints |
+| Application Whitelisting | Windows Defender Application Control | Servers |
+| Vulnerability Scanning | Qualys | All endpoints |
+| Patch Management | Microsoft SCCM | All endpoints |
+| Encryption | BitLocker/FileVault | Laptops/Desktops |
+
+3. PATCH MANAGEMENT
+================================================================================
+| System Type | Patch Schedule | Emergency Patches | Owner |
+|-------------|----------------|-------------------|-------|
+| Windows Servers | Monthly (2nd Tuesday) | Within 48 hours | IT |
+| Linux Servers | Monthly (1st Friday) | Within 48 hours | IT |
+| Workstations | Automatic | ASAP | IT |
+| Network Devices | Quarterly | Within 24 hours | IT |
+| Cloud Services | Automatic | N/A | Cloud Provider |
+
+4. MOBILE DEVICE MANAGEMENT
+================================================================================
+| Policy | Requirement | Enforcement |
+|--------|-------------|-------------|
+| Screen Lock | 4-digit PIN | MDM Policy |
+| Encryption | Required | MDM Policy |
+| Remote Wipe | Enabled | MDM Policy |
+| Jailbreak Detection | Block access | MDM Policy |
+| App Store Only | Required | MDM Policy |
+
+5. REMEDIATION PROCEDURES
+================================================================================
+| Finding | Action | Timeline |
+|---------|--------|----------|
+| Malware Detected | Isolate device, EDR response | Immediate |
+| Patch Missing | Deploy patch | 48 hours |
+| Unauthorized Software | Uninstall | 24 hours |
+| Policy Violation | User notification | 24 hours |
+| Critical Vulnerability | Emergency patch | 8 hours |
+
+================================================================================
